@@ -74,6 +74,159 @@ nav a:hover {
 }
 
 
+/** Bloc Search **/
+
+.title {
+    padding: 0em 1.5em 0em 0em;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.secondline {
+    font-family: 'Raleway', sans-serif;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.search {
+    padding: 1em 1em 0em 1em;
+    max-width: 320px;
+    width: 100%;
+    margin: -10px 0px 30px -13px;
+}
+
+.search .imagefont {
+    height: 17px;
+    width: 17px;
+}
+
+.search label {
+    background: #F2F2F2;
+    padding: 12px 15px 11px 15px;
+    align-items: center;
+    border: 2px #F2F2F2 solid;
+    border-radius: 15px 0px 0px 15px;
+    margin: 0px 0px 0px 0px;
+}
+
+.search input {
+    background: white;
+    padding: 12px 10px 11px 10px;
+    align-items: center;
+    border: 2px #F2F2F2 solid;
+    margin: 0px -5px 0px -5px;
+}
+
+.search button {
+    background: #0065FC;
+    padding: 12px 10px 11px 10px;
+    align-items: center;
+    border: 2px #0065FC solid;
+    border-radius: 0px 15px 15px 0px;
+    color: #F2F2F2;
+    margin: 0px 0px 0px 0px;
+}
+
+.search ::placeholder {
+    font-size: 1.2em;
+    color: black;
+}
+
+#search {
+    display: none;
+}
+
+
+/** Bloc Filters **/
+
+#bloc_filter {
+    display: flex;
+    font-size: 1.3em;
+    color: black;
+    margin: 2em 0em 1em 0em;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+#bloc_filter .title {
+    padding: 13px 0px 25px 0px;
+}
+
+#bloc_filter .form {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    height: 20px;
+    align-items: center;
+    padding: 15px 15px 15px 30px;
+}
+
+#bloc_filter .label {
+    background: #DEEBFF;
+    border: 1px #DEEBFF solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    position: absolute;
+    left: 25px;
+    color: #0065FC;
+}
+
+#bloc_filter .input {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0px 10px 0px 40px;
+    border: 2px #F2F2F2 solid;
+    margin-right: 0.1px;
+    border-radius: 20px 20px 20px 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#bloc_filter .input:hover {
+    background: #DEEBFF;
+    padding: 0px 10px 0px 40px;
+    align-items: center;
+    border: 2px white solid;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 20px 20px 20px 20px;
+    color: #0065FC;
+}
+
+
+/* Information */
+
+#info {
+    display: flex;
+    margin: 0px 0px 20px 0px;
+    color: #202124;
+}
+
+.Informationlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border: 1px #F2F2F2 solid;
+    border-radius: 50%;
+    margin-top: -2px;
+    margin-right: 10px;
+    color: #0065FC;
+}
+
+.infotext {
+    font-size: 1.3em;
+}
+
+
 /** Version Tablette **/
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -138,5 +291,42 @@ nav a:hover {
     }
     #logo {
         margin: 27px 0px 0px 20px;
+    }
+    /** Bloc Search **/
+    .title {
+        padding: 0em 1.5em 0em 0em;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 1.3em;
+        margin-left: 20px;
+    }
+    .secondline {
+        font-size: 1.2em;
+    }
+    .search_desktop {
+        display: none;
+    }
+    #search {
+        display: flex;
+        position: relative;
+    }
+    .search input {
+        padding-right: 95px;
+    }
+    #bloc_search {
+        margin-left: 20px;
+        position: relative;
+    }
+    button {
+        position: absolute;
+        top: 14px;
+        border-radius: 10px 10px 10px 10px;
+    }
+    /** Filters **/
+    #bloc_filter .title {
+        width: 100%;
+    }
+    #info {
+        margin-left: 10px;
     }
 }
