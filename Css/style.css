@@ -227,12 +227,280 @@ nav a:hover {
 }
 
 
+/** Section accomodation **/
+
+#accomodation {
+    display: flex;
+    transition: 1s;
+}
+
+#accomodation h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.6em;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+#accomodation p {
+    color: black;
+}
+
+
+/** Article Accomodation **/
+
+#accomodation article {
+    background-color: #F2F2F2;
+    position: relative;
+    width: 63vw;
+    height: 550px;
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#accomodation .text_top {
+    display: flex;
+    width: 100%;
+    margin: 3% 50% 4% 5%;
+    color: black;
+    font-weight: bold;
+    font-size: 1.6em;
+    font-family: sans-serif;
+}
+
+#accomodation .text_bottom {
+    display: flex;
+    width: 32%;
+    margin: 6% 60% 3% 5%;
+    color: black;
+    font-weight: bold;
+    font-size: 1.6em;
+    font-family: sans-serif;
+}
+
+#accomodation #pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 68%;
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+}
+
+#pictures p {
+    color: black;
+    font-size: 1em;
+    height: 97%;
+}
+
+#pictures #image_hebegement1 {
+    height: 50%;
+    width: 30%;
+    background: url('../images/hebergements/4_small/aubergelacannebiere.jpg') no-repeat;
+    background-size: cover;
+    background-position: right 1px bottom 45px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 30px;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#pictures #image_hebegement2 {
+    height: 50%;
+    width: 30%;
+    background: url('../images/hebergements/4_small/hotelduport.jpg') no-repeat;
+    background-size: cover;
+    background-position: left 0px bottom 50px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#pictures #image_hebegement3 {
+    height: 50%;
+    width: 30%;
+    background: url('../images/hebergements/4_small/hotellesmouettes.jpg') no-repeat;
+    background-size: cover;
+    background-position: left 0px bottom 70px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#pictures #image_hebegement4 {
+    height: 50%;
+    width: 30%;
+    background: url('../images/hebergements/4_small/hoteldelamer.jpg') no-repeat;
+    background-size: cover;
+    background-position: right 0px bottom 20px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#pictures #image_hebegement5 {
+    height: 50%;
+    width: 30%;
+    background: url('../images/hebergements/4_small/aubergelepanier.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#pictures #image_hebegement6 {
+    height: 50%;
+    width: 30%;
+    background: url('../images/hebergements/4_small/hotelchezamina.jpg') no-repeat;
+    background-size: cover;
+    background-position: left 0px bottom 10px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+
+/* Description d'images */
+
+article .picture_description {
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    background: white;
+    height: 40%;
+    width: 99%;
+    border: 4px white solid;
+    border-radius: 0px 0px 8px 8px;
+    text-align: justify;
+    align-items: center;
+    font-size: 0.6em;
+}
+
+article .stars {
+    margin-top: -50px;
+}
+
+
+/* Popular Accomdation **/
+
+#accomodation aside {
+    background-color: #F2F2F2;
+    width: 23vw;
+    height: 550px;
+    margin-left: 30px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#accomodation .texthebpop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 82%;
+    margin: 7% 9% 4% 9%;
+    color: black;
+    font-weight: bold;
+    font-size: 1.6em;
+    font-family: sans-serif;
+}
+
+.texthebpop img {
+    margin-bottom: 5px;
+}
+
+#populaire #image_hebegement7 {
+    height: 134px;
+    width: 82%;
+    background: url('../images/hebergements/4_small/hotellesoleildumatin.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom 0px right 60px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0% 8% 5% 8%;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#populaire #image_hebegement8 {
+    height: 134px;
+    width: 82%;
+    background: url('../images/hebergements/4_small/aucoeurdeleauchambresdhotes.jpg') no-repeat;
+    background-size: cover;
+    background-position: right 70px top -15px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0% 8% 5% 8%;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#populaire #image_hebegement9 {
+    height: 134px;
+    width: 82%;
+    background: url('../images/hebergements/4_small/hoteltoutbleuetblanc.jpg') no-repeat;
+    background-size: 50% auto;
+    background-position: left 1px bottom -25px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0% 8% 5% 8%;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+aside .Image_description {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: white;
+    height: 100%;
+    width: 52%;
+    border-radius: 0px 8px 8px 0px;
+    text-align: justify;
+    align-items: center;
+    font-size: 0.6em;
+    padding-left: 20px;
+}
+
+aside .stars {
+    margin-top: 40%;
+}
+
+#accomodation a:hover {
+    transform: scale(1.2);
+}
+
+
 /** Version Tablette **/
 
 @media (min-width: 768px) and (max-width: 991px) {
+    /** Header **/
     nav {
         margin-top: 10px;
         margin-bottom: 16.5px;
+    }
+    /** Accomodation **/
+    #accomodation {
+        display: flex;
+        flex-direction: column;
+    }
+    #accomodation article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #accomodation aside {
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+        height: auto;
+    }
+    aside .stars {
+        margin-top: 70px;
     }
 }
 
@@ -328,5 +596,66 @@ nav a:hover {
     }
     #info {
         margin-left: 10px;
+    }
+    /** Accomodation **/
+    #accomodation {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #accomodation article {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+        background-color: white;
+    }
+    #accomodation aside {
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+        height: auto;
+        border-radius: 0px;
+    }
+    #accomodation .text_bottom {
+        display: flex;
+        width: 100%;
+    }
+    #accomodation #pictures {
+        display: contents;
+        width: 6200px;
+    }
+    #pictures #image_hebegement1 {
+        width: 85%;
+        margin: 0% 10% 8% 5%;
+        height: 160px;
+        box-shadow: 10px 10px 20px #F2F2F2;
+    }
+    #pictures #image_hebegement2 {
+        width: 85%;
+        margin: 0% 10% 8% 5%;
+        height: 160px;
+        box-shadow: 10px 10px 20px #F2F2F2;
+    }
+    #pictures #image_hebegement3 {
+        width: 85%;
+        margin: 0% 10% 8% 5%;
+        height: 160px;
+        box-shadow: 10px 10px 20px #F2F2F2;
+    }
+    #pictures #image_hebegement4 {
+        width: 85%;
+        margin: 0% 10% 8% 5%;
+        height: 160px;
+        box-shadow: 10px 10px 20px #F2F2F2;
+    }
+    #pictures #image_hebegement5 {
+        width: 85%;
+        margin: 0% 10% 8% 5%;
+        height: 160px;
+        box-shadow: 10px 10px 20px #F2F2F2;
+    }
+    #pictures #image_hebegement6 {
+        width: 85%;
+        margin: 0% 10% 0% 5%;
+        height: 160px;
+        box-shadow: 10px 10px 20px #F2F2F2;
     }
 }
