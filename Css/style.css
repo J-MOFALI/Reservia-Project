@@ -621,6 +621,41 @@ aside .stars {
 }
 
 
+/** Footer **/
+
+footer {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    justify-content: left;
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 40px;
+}
+
+footer ul {
+    flex-direction: column;
+    padding: 0px 10px 0px 0px;
+}
+
+footer h1 {
+    font-size: 1.3em;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+footer li {
+    padding-bottom: 10px;
+}
+
+footer .bloc_footer {
+    margin-left: 6%;
+    width: 30%;
+    margin-right: 1.69%;
+}
+
+
 /** Version Tablette **/
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -815,6 +850,7 @@ aside .stars {
     #activities #activities_bloc {
         display: flex;
         width: 100%;
+        height: auto;
         flex-direction: row;
     }
     #activities #image1 {
@@ -856,5 +892,14 @@ aside .stars {
     #activity .nom {
         width: 97.5%;
         left: -0.75px;
+    }
+    /** Footer **/
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .bloc_footer {
+        margin-left: 10%;
+        width: 100%;
     }
 }
