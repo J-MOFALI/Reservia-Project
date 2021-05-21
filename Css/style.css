@@ -477,6 +477,150 @@ aside .stars {
 }
 
 
+/** Section activities **/
+
+
+/* Section activités générale */
+
+#activities {
+    display: flex;
+    transition: 1s;
+    width: 90vw;
+}
+
+
+/* Section activités */
+
+#activites #activity {
+    background-color: white;
+    position: relative;
+    height: 500px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 15px 15px 15px 15px;
+    justify-content: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+#activity a:hover {
+    transform: scale(1.2);
+}
+
+#activity h2 {
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    color: black;
+    font-size: 1.6em;
+    font-family: sans-serif;
+}
+
+#activities_bloc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 400px;
+    width: 89vw;
+    padding: 0px 10px 0px 10px;
+}
+
+#activities #image1 {
+    height: 400px;
+    width: 22%;
+    background: url('../images/activites/4_small/vieuxport.jpg') no-repeat;
+    background-position: center;
+    position: relative;
+    border: 2px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+    position: relative;
+}
+
+#activities #image2 {
+    height: 190px;
+    width: 22%;
+    padding: 3px 3px 3px 3px;
+    background: url('../images/activites/4_small/fortdepomegues.jpg') no-repeat;
+    background-position: center;
+    position: relative;
+    border: 2px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+    margin: 0px 0px 10px 0px;
+}
+
+#activities #image3 {
+    height: 170px;
+    width: 22%;
+    padding: 3px 3px 3px 3px;
+    background: url('../images/activites/4_small/ilesdufrioul.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 2px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+    margin: 10px 0px 0px 0px;
+}
+
+#activities #image4 {
+    height: 400px;
+    width: 22%;
+    padding: 3px 3px 3px 3px;
+    background: url('../images/activites/4_small/parcnationaldescalanques.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 2px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#activities #image5 {
+    height: 170px;
+    width: 22%;
+    padding: 3px 3px 3px 3px;
+    background: url('../images/activites/4_small/notredamedelagarde.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 2px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+    margin: 0px 0px 10px 0px;
+}
+
+#activities #image6 {
+    height: 190px;
+    width: 22%;
+    padding: 3px 3px 3px 3px;
+    background: url('../images/activites/4_small/parclongchamp.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 2px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+    margin: 10px 0px 0px 0px;
+}
+
+#activity .nom {
+    position: absolute;
+    bottom: -20px;
+    left: -0.25px;
+    border-left: 1px white solid;
+    background: white;
+    height: 10%;
+    width: 97%;
+    min-width: auto;
+    overflow: auto;
+    border-radius: 0px 0px 14px 12px;
+    display: flex;
+    align-content: center;
+    font-size: 0.6em;
+    font-size: 1.3em;
+    padding: 3% 0% 3% 3%;
+    color: black;
+}
+
+
 /** Version Tablette **/
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -614,48 +758,103 @@ aside .stars {
         height: auto;
         border-radius: 0px;
     }
+    #accomodation .text_top {
+        margin-left: 35px;
+    }
     #accomodation .text_bottom {
         display: flex;
         width: 100%;
+        margin-left: 35px;
     }
     #accomodation #pictures {
         display: contents;
-        width: 6200px;
     }
     #pictures #image_hebegement1 {
-        width: 85%;
-        margin: 0% 10% 8% 5%;
+        width: 82%;
+        margin: 0% 10% 8% 8%;
         height: 160px;
         box-shadow: 10px 10px 20px #F2F2F2;
     }
     #pictures #image_hebegement2 {
-        width: 85%;
-        margin: 0% 10% 8% 5%;
+        width: 82%;
+        margin: 0% 10% 8% 8%;
         height: 160px;
         box-shadow: 10px 10px 20px #F2F2F2;
     }
     #pictures #image_hebegement3 {
-        width: 85%;
-        margin: 0% 10% 8% 5%;
+        width: 82%;
+        margin: 0% 10% 8% 8%;
         height: 160px;
         box-shadow: 10px 10px 20px #F2F2F2;
     }
     #pictures #image_hebegement4 {
-        width: 85%;
-        margin: 0% 10% 8% 5%;
+        width: 82%;
+        margin: 0% 10% 8% 8%;
         height: 160px;
         box-shadow: 10px 10px 20px #F2F2F2;
     }
     #pictures #image_hebegement5 {
-        width: 85%;
-        margin: 0% 10% 8% 5%;
+        width: 82%;
+        margin: 0% 10% 8% 8%;
         height: 160px;
         box-shadow: 10px 10px 20px #F2F2F2;
     }
     #pictures #image_hebegement6 {
-        width: 85%;
-        margin: 0% 10% 0% 5%;
+        width: 82%;
+        margin: 0% 10% 0% 8%;
         height: 160px;
         box-shadow: 10px 10px 20px #F2F2F2;
+    }
+    /* Section activités */
+    #activites #activity {
+        padding: 20px -10px 0px 0px;
+    }
+    #activity h2 {
+        margin: -5px 0px 5px 35px;
+    }
+    #activities #activities_bloc {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+    #activities #image1 {
+        width: 310px;
+        margin: 10px 0px 30px 12px;
+        height: 160px;
+        box-shadow: 10px 10px 15px #F2F2F2;
+    }
+    #activities #image2 {
+        width: 310px;
+        margin: 10px 0px 30px 12px;
+        height: 160px;
+        box-shadow: 10px 10px 15px #F2F2F2;
+    }
+    #activities #image3 {
+        width: 310px;
+        margin: 10px 0px 30px 12px;
+        height: 160px;
+        box-shadow: 10px 10px 15px #F2F2F2;
+    }
+    #activities #image4 {
+        width: 310px;
+        margin: 10px 0px 30px 12px;
+        height: 160px;
+        box-shadow: 10px 10px 15px #F2F2F2;
+    }
+    #activities #image5 {
+        width: 310px;
+        margin: 10px 0px 30px 12px;
+        height: 160px;
+        box-shadow: 10px 10px 15px #F2F2F2;
+    }
+    #activities #image6 {
+        width: 310px;
+        margin: 10px 0px 30px 12px;
+        height: 160px;
+        box-shadow: 10px 10px 15px #F2F2F2;
+    }
+    #activity .nom {
+        width: 97.5%;
+        left: -0.75px;
     }
 }
