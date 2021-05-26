@@ -43,7 +43,7 @@ header {
 }
 
 nav {
-    margin-top: 0px;
+    margin-top: 14px;
     margin-bottom: 16.5px;
 }
 
@@ -62,15 +62,17 @@ nav a:hover {
     border-top: 4px #0065FC solid;
 }
 
+.suscribe:hover {
+    color: #0065FC;
+    border-top: 0px white solid;
+}
+
 .suscribe {
     border-top: none;
     color: #0065FC;
     margin-bottom: 22px;
-}
-
-.suscribe:hover {
-    color: none;
-    border-top: none;
+    font-family: sans-serif;
+    font-size: bold;
 }
 
 
@@ -120,12 +122,12 @@ nav a:hover {
 
 .search button {
     background: #0065FC;
-    padding: 12px 10px 11px 10px;
+    padding: 13.5px 10px 12.5px 10px;
     align-items: center;
-    border: 2px #0065FC solid;
+    border: 2px white solid;
     border-radius: 0px 15px 15px 0px;
     color: #F2F2F2;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 5px -5px;
 }
 
 .search ::placeholder {
@@ -275,7 +277,7 @@ nav a:hover {
     margin: 6% 60% 3% 5%;
     color: black;
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-family: sans-serif;
 }
 
@@ -491,13 +493,13 @@ aside .stars {
 
 /* Section activités */
 
-#activites #activity {
+#activities #activity {
     background-color: white;
     position: relative;
     height: 500px;
     margin: 10px 0px 20px 0px;
     border-radius: 15px 15px 15px 15px;
-    justify-content: justify;
+    justify-content: center;
     display: flex;
     flex-direction: column;
 }
@@ -716,13 +718,13 @@ footer .bloc_footer {
     nav a:hover {
         color: #0065FC;
         border-bottom: 4px #0065FC solid;
-        margin-bottom: none;
+        margin-bottom: white;
         border-top: none;
         padding-bottom: 15px;
     }
     .suscribe {
         width: auto;
-        border-bottom: none;
+        border-bottom: white;
         color: #0065FC;
         margin: 0px 20px 15px 0px;
         position: absolute;
@@ -734,7 +736,7 @@ footer .bloc_footer {
         padding-left: 150px;
     }
     .suscribe:hover {
-        border-bottom: none;
+        border-bottom: white;
     }
     #logo {
         margin: 27px 0px 0px 20px;
@@ -764,10 +766,12 @@ footer .bloc_footer {
         margin-left: 20px;
         position: relative;
     }
-    button {
+    .search button {
         position: absolute;
-        top: 14px;
-        border-radius: 10px 10px 10px 10px;
+        top: 12px;
+        left: 270px;
+        border-radius: 15px 15px 15px 15px;
+        padding: 13.5px 13.5px 13.5px 13.5px;
     }
     /** Filters **/
     #bloc_filter .title {
@@ -841,8 +845,8 @@ footer .bloc_footer {
         box-shadow: 10px 10px 20px #F2F2F2;
     }
     /* Section activités */
-    #activites #activity {
-        padding: 20px -10px 0px 0px;
+    #activities #activity {
+        height: 100%;
     }
     #activity h2 {
         margin: -5px 0px 5px 35px;
@@ -850,42 +854,42 @@ footer .bloc_footer {
     #activities #activities_bloc {
         display: flex;
         width: 100%;
-        height: auto;
+        height: 100%;
         flex-direction: row;
     }
     #activities #image1 {
         width: 310px;
-        margin: 10px 0px 30px 12px;
+        margin: 10px 10px 30px 12px;
         height: 160px;
         box-shadow: 10px 10px 15px #F2F2F2;
     }
     #activities #image2 {
         width: 310px;
-        margin: 10px 0px 30px 12px;
+        margin: 10px 10px 30px 12px;
         height: 160px;
         box-shadow: 10px 10px 15px #F2F2F2;
     }
     #activities #image3 {
         width: 310px;
-        margin: 10px 0px 30px 12px;
+        margin: 10px 10px 30px 12px;
         height: 160px;
         box-shadow: 10px 10px 15px #F2F2F2;
     }
     #activities #image4 {
         width: 310px;
-        margin: 10px 0px 30px 12px;
+        margin: 10px 10px 30px 12px;
         height: 160px;
         box-shadow: 10px 10px 15px #F2F2F2;
     }
     #activities #image5 {
         width: 310px;
-        margin: 10px 0px 30px 12px;
+        margin: 10px 10px 30px 12px;
         height: 160px;
         box-shadow: 10px 10px 15px #F2F2F2;
     }
     #activities #image6 {
         width: 310px;
-        margin: 10px 0px 30px 12px;
+        margin: 10px 10px 30px 12px;
         height: 160px;
         box-shadow: 10px 10px 15px #F2F2F2;
     }
