@@ -54,6 +54,7 @@ nav a {
     justify-content: space-between;
     color: black;
     padding: 19px 20px 0px 20px;
+    font-weight: 200;
     font-size: 1.2em;
 }
 
@@ -71,8 +72,7 @@ nav a:hover {
     border-top: none;
     color: #0065FC;
     margin-bottom: 22px;
-    font-family: sans-serif;
-    font-size: bold;
+    font-weight: 500;
 }
 
 
@@ -80,13 +80,12 @@ nav a:hover {
 
 .title {
     padding: 0em 1.5em 0em 0em;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-weight: 200;
     font-size: 1.3em;
 }
 
 .secondline {
-    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
     margin-top: -10px;
     margin-bottom: 20px;
 }
@@ -131,7 +130,7 @@ nav a:hover {
 }
 
 .search ::placeholder {
-    font-size: 1.2em;
+    font-size: 1em;
     color: black;
 }
 
@@ -147,12 +146,13 @@ nav a:hover {
     font-size: 1.3em;
     color: black;
     margin: 2em 0em 1em 0em;
-    font-weight: bold;
     flex-wrap: wrap;
 }
 
 #bloc_filter .title {
     padding: 13px 0px 25px 0px;
+    font-weight: 700;
+    font-size: 1.3em;
 }
 
 #bloc_filter .form {
@@ -187,8 +187,7 @@ nav a:hover {
     border: 2px #F2F2F2 solid;
     margin-right: 0.1px;
     border-radius: 20px 20px 20px 20px;
-    font-weight: bold;
-    font-family: sans-serif;
+    font-weight: 500;
 }
 
 #bloc_filter .input:hover {
@@ -226,6 +225,7 @@ nav a:hover {
 
 .infotext {
     font-size: 1.3em;
+    font-weight: 100;
 }
 
 
@@ -236,16 +236,36 @@ nav a:hover {
     transition: 1s;
 }
 
-#accomodation h2 {
-    color: black;
-    font-weight: bold;
-    font-size: 1.6em;
-    font-family: sans-serif;
-    text-align: left;
+#accomodation .stars {
+    display: flex;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3px;
+}
+
+.stars .inactivated_stars {
+    color: #ebebeb;
+    margin-left: 3px;
+}
+
+.stars .activated_stars {
+    color: #0065FC;
 }
 
 #accomodation p {
     color: black;
+    font-size: 1.4em;
+    font-weight: 200;
+    margin-top: 2px;
+}
+
+#accomodation h2 {
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 5px;
 }
 
 
@@ -289,12 +309,6 @@ nav a:hover {
     height: 68%;
     width: 90%;
     margin: 0% 5% 0% 5%;
-}
-
-#pictures p {
-    color: black;
-    font-size: 1em;
-    height: 97%;
 }
 
 #pictures #image_hebegement1 {
@@ -374,20 +388,17 @@ nav a:hover {
 
 article .picture_description {
     position: absolute;
-    bottom: -1px;
-    left: -1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: white;
     height: 40%;
     width: 99%;
-    border: 4px white solid;
+    border: 2px white solid;
     border-radius: 0px 0px 8px 8px;
     text-align: justify;
     align-items: center;
     font-size: 0.6em;
-}
-
-article .stars {
-    margin-top: -50px;
 }
 
 
@@ -468,10 +479,6 @@ aside .Image_description {
     align-items: center;
     font-size: 0.6em;
     padding-left: 20px;
-}
-
-aside .stars {
-    margin-top: 40%;
 }
 
 #accomodation a:hover {
@@ -603,22 +610,19 @@ aside .stars {
     margin: 10px 0px 0px 0px;
 }
 
-#activity .nom {
+#activity .activity_name {
     position: absolute;
-    bottom: -20px;
-    left: -0.25px;
-    border-left: 1px white solid;
+    bottom: 0;
+    left: 0;
     background: white;
-    height: 10%;
+    height: 15%;
     width: 97%;
-    min-width: auto;
-    overflow: auto;
-    border-radius: 0px 0px 14px 12px;
+    border-radius: 0px 0px 12px 10px;
     display: flex;
-    align-content: center;
-    font-size: 0.6em;
-    font-size: 1.3em;
-    padding: 3% 0% 3% 3%;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 1.2em;
     color: black;
 }
 
@@ -642,9 +646,8 @@ footer ul {
 }
 
 footer h1 {
-    font-size: 1.3em;
-    font-weight: lighter;
-    font-family: sans-serif;
+    font-size: 1.4em;
+    font-weight: 700;
 }
 
 footer li {
@@ -718,7 +721,6 @@ footer .bloc_footer {
     nav a:hover {
         color: #0065FC;
         border-bottom: 4px #0065FC solid;
-        margin-bottom: white;
         border-top: none;
         padding-bottom: 15px;
     }
@@ -744,13 +746,12 @@ footer .bloc_footer {
     /** Bloc Search **/
     .title {
         padding: 0em 1.5em 0em 0em;
-        font-family: sans-serif;
-        font-weight: bold;
-        font-size: 1.3em;
+        font-weight: 700;
+        font-size: 1.23em;
         margin-left: 20px;
     }
     .secondline {
-        font-size: 1.2em;
+        font-size: 1.23em;
     }
     .search_desktop {
         display: none;
