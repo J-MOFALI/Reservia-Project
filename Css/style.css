@@ -445,6 +445,7 @@ aside .Image_description {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 }
 
 #activity a:hover {
