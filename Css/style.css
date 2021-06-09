@@ -14,6 +14,8 @@ body {
 #bloc_page {
     width: 90vw;
     margin: auto;
+    max-width: 1500px;
+    margin: auto;
 }
 
 ul {
@@ -264,7 +266,6 @@ nav a:hover {
     color: black;
     font-size: 2em;
     font-weight: bold;
-    font-family: sans-serif;
     margin-top: 5px;
 }
 
@@ -354,6 +355,9 @@ article .picture_description {
     height: 100%;
     margin-left: 3%;
     border-radius: 15px 15px 15px 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 #accomodation .texthebpop {
@@ -379,7 +383,7 @@ article .picture_description {
     align-content: center;
     height: 100%;
     width: 90%;
-    margin: 5% 5% 0% 5%;
+    margin: 0% 0% 0% 5.8%;
 }
 
 #populaire .photopop {
@@ -464,28 +468,29 @@ aside .Image_description {
     height: 400px;
     width: 100%;
     padding: 0px 10px 0px 10px;
+    margin-left: 25px;
 }
 
-#activities .photo_act {
+#activities_bloc .photo_act {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 15px 15px 15px 15px;
 }
 
-#activities .grand {
+#activities_bloc .grand {
     position: relative;
     height: 400px;
-    width: 22%;
+    width: 24%;
     border: 2px white solid;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 4px 4px 4px #ebebeb;
     position: relative;
 }
 
-#activities .moyenne1 {
+#activities_bloc .moyenne1 {
     height: 190px;
-    width: 22%;
+    width: 24%;
     position: relative;
     border: 2px white solid;
     border-radius: 15px 15px 15px 15px;
@@ -493,27 +498,27 @@ aside .Image_description {
     margin-bottom: 30px;
 }
 
-#activities .moyenne2 {
+#activities_bloc .moyenne2 {
     height: 190px;
-    width: 22%;
+    width: 24%;
     position: relative;
     border: 2px white solid;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 4px 4px 4px #ebebeb;
 }
 
-#activities .petite1 {
+#activities_bloc .petite1 {
     height: 170px;
-    width: 22%;
+    width: 24%;
     position: relative;
     border: 2px white solid;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 4px 4px 4px #ebebeb;
 }
 
-#activities .petite2 {
+#activities_bloc .petite2 {
     height: 170px;
-    width: 22%;
+    width: 24%;
     position: relative;
     border: 2px white solid;
     border-radius: 15px 15px 15px 15px;
@@ -525,16 +530,19 @@ aside .Image_description {
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
     background: white;
-    height: 15%;
-    width: 97%;
-    border-radius: 0px 0px 12px 10px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    font-weight: 700;
+    border: 2 white solid;
     color: black;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    border-radius: 0px 0px 8px 8px;
+    align-items: center;
+    font-weight: 700;
+}
+
+#activity h3 {
+    margin-left: 10px;
 }
 
 
@@ -549,6 +557,8 @@ footer {
     width: 100%;
     padding-left: 0px;
     margin-top: 40px;
+    max-width: 1500px;
+    margin: auto;
 }
 
 footer ul {
@@ -710,12 +720,12 @@ footer .bloc_footer {
         border-radius: 0px;
     }
     #accomodation .text_top {
-        margin-left: 30px;
+        margin: 10px 0px 0px 28px;
     }
     #accomodation .text_bottom {
         display: flex;
         width: 90%;
-        margin-left: 35px;
+        margin-left: 30px;
     }
     #accomodation #pictures {
         display: contents;
@@ -723,7 +733,7 @@ footer .bloc_footer {
     #pictures .image_hebegement {
         position: relative;
         width: 310px;
-        margin: 20px 0px 20px 25px;
+        margin: 20px 0px 15px 25px;
         height: 170px;
         box-shadow: 10px 10px 15px #F2F2F2;
     }
@@ -750,7 +760,7 @@ footer .bloc_footer {
     #activities .image {
         position: relative;
         width: 310px;
-        margin: 20px 0px 20px 25px;
+        margin: 20px 0px 20px -2px;
         height: 170px;
         box-shadow: 10px 10px 15px #F2F2F2;
     }
